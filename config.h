@@ -66,14 +66,14 @@ static const char unknown_str[] = "n/a";
 
 static const struct arg args[] = {
 	/* function format          argument */
-    { netspeed_rx,   "^b#2a2a2a^^c#ffffff^ RX %sB/s ", "wlp82s0"             },
-    { run_command,   "^b#2f2f2f^^c#ffffff^ IP %2s ", "curl -s ifconfig.io"         },
-    { run_command,   "^b#3a3a3a^^c#ffffff^ ADA %2s ", "curl -s rate.sx/ada | awk '/begin:/ {print $8}'"         },
-    { run_command,   "^b#3f3f3f^^c#ffffff^ BTC %2s ", "curl -s rate.sx/btc | awk '/begin:/ {print $8}'"         },
-	{ cpu_perc,      "^b#4a4a4a^^c#ffffff^ CPU %2s%% ",  NULL   			 },
-	{ ram_perc,      "^b#4f4f4f^^c#ffffff^ RAM %2s%% ",  NULL   			 },
-	{ disk_perc, 	 "^b#5a5a5a^^c#ffffff^ SSD %2s%% ", "/"			 	     },
-    { vol_perc,      "^b#5f5f5f^^c#ffffff^ Vol %2s%% ", "/dev/mixer"         },
-  	{ battery_perc,  "^b#6a6a6a^^c#ffffff^ Bat %2s%% ",  "BAT0" 			 },
-	{ datetime,      "^b#6f6f6f^^c#ffffff^ %s ",         "%a %e %b %k:%M"    },
+    { netspeed_rx,   "^b#26262b^^c#ffffff^ RX %sB/s ", "wlp82s0"             },
+    { run_command,   "^b#2a2a2e^^c#ffffff^ IP %2s ", "curl -s ifconfig.io"         },
+    { run_command,   "^b#2d2d32^^c#ffffff^ ADA %2s ", "curl -s rate.sx/ada | awk '/begin:/ {print $8}'"         },
+    { run_command,   "^b#303035^^c#ffffff^ BTC %2s ", "curl -s rate.sx/btc | awk '/begin:/ {print $8}'"         },
+	{ cpu_perc,      "^b#343438^^c#ffffff^ CPU %2s%% ",  NULL   			 },
+	{ ram_perc,      "^b#37373b^^c#ffffff^ RAM %2s%% ",  NULL   			 },
+	{ disk_perc, 	 "^b#3a3a3f^^c#ffffff^ SSD %2s%% ", "/"			 	     },
+    { run_command,   "^b#3d3d42^^c#ffffff^ Vol %2s%% ", "pamixer --get-volume"         },
+  	{ battery_perc,  "^b#414145^^c#ffffff^ Bat %2s%% ",  "BAT0" 			 },
+	{ datetime,      "^b#444448^^c#ffffff^ %s ",         "%a %e %b %k:%M"    },
 };
